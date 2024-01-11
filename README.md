@@ -3,6 +3,6 @@ Source code of RoblockLLy, an educational robotics simulator based on Unity and 
 
 ![RoblockLLy](img/RoblockLLy-Logo.jpg)
 
-![RoblockLLy robot designing interface](img/RoblockLLy-Designing.jpg)
+![RoblockLLy robot designing interface](img/RoblockLLy-Designing.png)
 
 ![RoblockLLy programming interface](img/RoblockLLy-Programming.jpg)
