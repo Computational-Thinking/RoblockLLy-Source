@@ -9,3 +9,5 @@ Source code of RoblockLLy, an educational robotics simulator based on Unity and 
 
 ## Local deployment
 
+The "src" folder contains the project in Unity version 2020.3.28f1.
+
