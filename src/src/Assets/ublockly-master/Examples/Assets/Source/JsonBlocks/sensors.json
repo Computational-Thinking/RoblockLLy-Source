@@ -1,0 +1,152 @@
+[
+  {
+    "type": "sensors_touch_contact",
+    "message0": "Sensor contacto %1 choca",
+    "args0": [
+        {
+            "type": "field_dropdown",
+            "name": "POSITION",
+            "options": [
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_CENTER}", "frontal central"],
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_RIGHT}", "frontal derecho"],
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_LEFT}", "frontal izquierdo"],
+              ["%{BKY_TOUCH_SENSOR_FRONT}", "delantero"],
+              ["%{BKY_TOUCH_SENSOR_RIGHT}", "derecho"],
+              ["%{BKY_TOUCH_SENSOR_LEFT}", "izquierdo"],
+              ["%{BKY_TOUCH_SENSOR_BACK}", "trasero"]
+            ]
+        }
+    ],
+    "output": "Boolean"
+  },
+  {
+    "type": "sensors_touch_not_contact",
+    "message0": "Sensor contacto %1 no choca",
+    "args0": [
+        {
+            "type": "field_dropdown",
+            "name": "POSITION",
+            "options": [
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_CENTER}", "frontal central"],
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_RIGHT}", "frontal derecho"],
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_LEFT}", "frontal izquierdo"],
+              ["%{BKY_TOUCH_SENSOR_FRONT}", "delantero"],
+              ["%{BKY_TOUCH_SENSOR_RIGHT}", "derecho"],
+              ["%{BKY_TOUCH_SENSOR_LEFT}", "izquierdo"],
+              ["%{BKY_TOUCH_SENSOR_BACK}", "trasero"]
+            ]
+        }
+    ],
+    "output": "Boolean"
+  },
+  {
+    "type": "sensors_ir_detect_white",
+    "message0": "Sensor infrarrojo %1 detecta blanco",
+    "args0": [
+        {
+            "type": "field_dropdown",
+            "name": "POSITION",
+            "options": [
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_CENTER}", "frontal central"],
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_RIGHT}", "frontal derecho"],
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_LEFT}", "frontal izquierdo"],
+              ["%{BKY_TOUCH_SENSOR_FRONT}", "delantero"],
+              ["%{BKY_TOUCH_SENSOR_RIGHT}", "derecho"],
+              ["%{BKY_TOUCH_SENSOR_LEFT}", "izquierdo"],
+              ["%{BKY_TOUCH_SENSOR_BACK}", "trasero"]
+            ]
+        }
+    ],
+    "output": "Boolean"
+  },
+  {
+    "type": "sensors_ir_detect_black",
+    "message0": "Sensor infrarrojo %1 detecta negro",
+    "args0": [
+        {
+            "type": "field_dropdown",
+            "name": "POSITION",
+            "options": [
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_CENTER}", "frontal central"],
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_RIGHT}", "frontal derecho"],
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_LEFT}", "frontal izquierdo"],
+              ["%{BKY_TOUCH_SENSOR_FRONT}", "delantero"],
+              ["%{BKY_TOUCH_SENSOR_RIGHT}", "derecho"],
+              ["%{BKY_TOUCH_SENSOR_LEFT}", "izquierdo"],
+              ["%{BKY_TOUCH_SENSOR_BACK}", "trasero"]
+            ]
+        }
+    ],
+    "output": "Boolean"
+  },
+  {
+    "type": "sensors_color_detect_colors",
+    "message0": "Sensor color %1 detecta %2",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "POSITION",
+        "options": [
+          ["%{BKY_TOUCH_SENSOR_TOPFRONT_CENTER}", "frontal central"],
+          ["%{BKY_TOUCH_SENSOR_TOPFRONT_RIGHT}", "frontal derecho"],
+          ["%{BKY_TOUCH_SENSOR_TOPFRONT_LEFT}", "frontal izquierdo"],
+          ["%{BKY_TOUCH_SENSOR_FRONT}", "delantero"],
+          ["%{BKY_TOUCH_SENSOR_RIGHT}", "derecho"],
+          ["%{BKY_TOUCH_SENSOR_LEFT}", "izquierdo"],
+          ["%{BKY_TOUCH_SENSOR_BACK}", "trasero"]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "COLOR",
+        "options": [
+          ["%{BKY_RED}", "Red"],
+          ["%{BKY_BLUE}", "Blue"],
+          ["%{BKY_GREEN}", "Green"],
+          ["%{BKY_YELLOW}", "Yellow"]
+        ]
+      }
+    ],
+    "output": "Boolean"
+  },
+  {
+    "type": "sensors_us_distance",
+    "message0": "Sensor Ultrasonido %1",
+    "args0": [
+        {
+            "type": "field_dropdown",
+            "name": "POSITION",
+            "options": [
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_CENTER}", "frontal central"],
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_RIGHT}", "frontal derecho"],
+              ["%{BKY_TOUCH_SENSOR_TOPFRONT_LEFT}", "frontal izquierdo"],
+              ["%{BKY_TOUCH_SENSOR_FRONT}", "delantero"],
+              ["%{BKY_TOUCH_SENSOR_RIGHT}", "derecho"],
+              ["%{BKY_TOUCH_SENSOR_LEFT}", "izquierdo"],
+              ["%{BKY_TOUCH_SENSOR_BACK}", "trasero"]
+            ]
+        }
+    ],
+    "output": "float"
+  },
+  {
+    "type": "sensors_gyroscope_still",
+    "message0": "Sensor Giroscopio no se inclina",
+    "output": "Boolean"
+  },
+  {
+    "type": "sensors_gyroscope_direction",
+    "message0": "Sensor Giroscopio se inclina hacia %1",
+    "args0": [
+        {
+            "type": "field_dropdown",
+            "name": "DIRECTION",
+            "options": [
+              ["%{BKY_GYROSCOPE_SENSOR_FORWARD}", "forward"],
+              ["%{BKY_GYROSCOPE_SENSOR_BACKWARD}", "backward"]
+            ]
+        }
+    ],
+    "output": "Boolean"
+  }
+]
